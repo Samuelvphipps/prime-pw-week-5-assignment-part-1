@@ -8,17 +8,15 @@ console.log('***** Object Practice *****')
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
-let favThreeFoods=[
-  'Burger', 'Venison', 'Pie']
 const me = {
   firstName:'Sam',
   lastName: 'Phipps',
   hasSiblings:true,
   shoeCount:2,
-  favThreeFoods
+  favThreeFoods:[
+    'Burger', 'Venison', 'Pie']
   // TODO - add properties here
 };
-// I tried to place the array creation inside the object literal but it kept giving me an error so I placed it outside.
 console.log('A little about me:', me);
 
 /* 2. Accessing object properties. -done
@@ -38,9 +36,7 @@ console.log('My full name is', fullName);
 */
 
 console.log('My first favorite food is', me.favThreeFoods[0]);
-console.log('My last favorite food is', me.favThreeFoods[favThreeFoods.length -1]);
-//I suppose since my array lives outside of the scope of the object I could also simply reference the array, as mentioned above I never figured out how to create and nest the array inside the object.
-
+console.log('My last favorite food is', me.favThreeFoods[me.favThreeFoods.length -1]);
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
